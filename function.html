@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunters</title>
+
+<style>
+    html, body {
+  background-color: #F8FAFC; 
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.tab-active {
+    background-color: blue;
+    color: white;
+}
+</style>
+    
+
+    <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- DaisyUi -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <section>
+
+
+        <div class="navbar bg-base-100 shadow-sm">
+       <div class="flex-1">
+         <a class="btn btn-ghost text-xl">
+             <img src="./assets/Frame 2087325652.png" alt="">
+         </a>
+       </div>
+       <div class="flex gap-2">
+         <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto"  id="see"/>
+         <button class="btn btn-primary" id="newIssue"> + New Issue</button>
+     
+       </div>
+     </div>
+    </section>
+
+    <section>
+        <div role="tablist" class="tabs tabs-box flex gap-4 bg-white max-w-[1110px] mx-auto mt-16 p-8 mb-6">
+  <a role="tab" class="tab shadow-md tab-active" id="all">All</a>
+  <a role="tab" class="tab  shadow-md" id="open">Open</a>
+  <a role="tab" class="tab shadow-md" id="closed">Closed</a>
+</div>
+<div class="mb-10">
+    <div class="max-w-[1110px] mx-auto bg-white flex justify-between p-8">
+        <div class="flex">
+
+            <img src="./assets/Aperture.png" >
+            <div >
+                <p><span id="number"></span> issues</p>
+                <p class="text-gray-500">Track and manage your project issues</p>
+            </div>
+        </div>
+            <div class="items-center ">
+                <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span> Open
+                <span class="w-3 h-3 rounded-full bg-purple-500 inline-block"></span> Closed
+                
+            </div>
+          
+    </div>
+</div>
+
+<div class="mx-auto w-3 my-8" id="spinner">
+    <span class="loading loading-spinner text-secondary "></span>
+
+</div>
+
+<div class="max-w-[1110px] mx-auto grid md:grid-cols-3 sm:grid-cols-1 gap-3 px-4" id="apiContainer">
+    <div class="shadow-2xl p-10 rounded-2xl" id="helloApi">
+        
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modalContainer">
+    
+  </div>
+</dialog>
+    <script src="./folder/main.js"></script>
+    <script src="./folder/serch.js"></script>
+    <script src="./folder/inner.js"></script>
+</body>
+</html>

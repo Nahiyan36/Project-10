@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Login </title>
+
+ <style>
+    html, body {
+  background-color: gray; /* or whatever gray shade you prefer */
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+ </style>
+
+    <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- DaisyUi -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+<body >
+    <section class="bg-[#ffffff] w-[550px] mx-auto my-[80px] h-full pb-60 pt-30">
+        <img src="./assets/github-logo.png" alt="" class="mx-auto">
+        <p class="text-center font-bold">GitHub Issues Tracker</p>
+        <p class="text-center text-gray-500">Sign in to manage your issues</p>
+        <div class="mx-8">
+            <p class="font-bold ">Username</p>
+            <input type="text" class="w-[450px] p-3" placeholder="Enter Username" id="user"><br><br>
+            <p class="font-bold">Password</p>
+            <input type="password" class="w-[450px] p-3" placeholder="Enter Password" id="password">
+            <button class="btn btn-primary w-[450px] mt-4" id="sign"> Sign In</button>
+        </div>
+    </section>
+
+<script src="./folder/Index.js"></script>
+</body>
+</html>
